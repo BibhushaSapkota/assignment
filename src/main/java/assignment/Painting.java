@@ -80,32 +80,32 @@ public class Painting implements ActionListener {
 		paintingf.setLayout(null);
 		p.add(paintingf);
 		
-		imagep1= new ImageIcon(getClass().getResource("p1.jpg"));
+		imagep1= new ImageIcon("p1.jpg");
 		lbl_imagep1=new JLabel(imagep1);
 		lbl_imagep1.setBounds(0, 0, 760, 600);
 		paintinga.add(lbl_imagep1);
 		
-		imagep2= new ImageIcon(getClass().getResource("p2.jpg"));
+		imagep2= new ImageIcon("p2.jpg");
 		lbl_imagep2=new JLabel(imagep2);
 		lbl_imagep2.setBounds(0, 0, 509, 600);
 		paintingb.add(lbl_imagep2);
 		
-		imagep3= new ImageIcon(getClass().getResource("p3.jpg"));
+		imagep3= new ImageIcon("p3.jpg");
 		lbl_imagep3=new JLabel(imagep3);
 		lbl_imagep3.setBounds(0, 0, 524, 600);
 		paintingc.add(lbl_imagep3);
 		
-		imagep4= new ImageIcon(getClass().getResource("p4.jpg"));
+		imagep4= new ImageIcon("p4.jpg");
 		lbl_imagep4=new JLabel(imagep4);
 		lbl_imagep4.setBounds(0, 0, 584, 600);
 		paintingd.add(lbl_imagep4);
 	
-		imagep5= new ImageIcon(getClass().getResource("p5.jpg"));
+		imagep5= new ImageIcon("p5.jpg");
 		lbl_imagep5=new JLabel(imagep5);
 		lbl_imagep5.setBounds(0, 0, 728, 600);
 		paintinge.add(lbl_imagep5);
 		
-		imagep6= new ImageIcon(getClass().getResource("p6.jpg"));
+		imagep6= new ImageIcon("p6.jpg");
 		lbl_imagep6=new JLabel(imagep6);
 		lbl_imagep6.setBounds(0, 0, 533, 600);
 		paintingf.add(lbl_imagep6);

@@ -13,7 +13,7 @@ public class Profile implements ActionListener{
 	JLabel lbl_profile,lbl_fname,lbl_lname,lbl_gender,lbl_username,lbl_password;
 	JTextField txt_fname,txt_lname,txt_username,txt_password,txt_gender;
 	JButton btn_update;
-	String user;
+	String user,username;
 	
 	public Profile (JPanel panel,String user) {
 		this.user=user;
@@ -59,8 +59,8 @@ public class Profile implements ActionListener{
 		btn_update.addActionListener(this);
 		btn_update.setBounds(650,450,300,70);
 		panel.add(btn_update);
-		
-		String username=user;
+
+		username=user;
 		Dbconnection db=new Dbconnection();
 		String query="select * from registration_form where username='"+username+"'";
 		ResultSet rs=db.select(query);
@@ -113,7 +113,8 @@ public class Profile implements ActionListener{
 				int rs=db.Update(query);
 				JOptionPane.showMessageDialog(btn_update, "Update successsful");
 			}
-			finally{
+			finally
+			{
 				
 			}
 			

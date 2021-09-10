@@ -72,29 +72,34 @@ public class Sketch implements ActionListener {
 		sketche.setLayout(null);
 		q.add(sketche);
 		
-		images1= new ImageIcon(getClass().getResource("s1.jpg"));
+		images1= new ImageIcon("s1.jpg");
 		lbl_images1=new JLabel(images1);
 		lbl_images1.setBounds(0, 0, 488, 600);
+		lbl_images1.setLayout(null);
 		sketcha.add(lbl_images1);
 		
-		images2= new ImageIcon(getClass().getResource("s2.jpg"));
+		images2= new ImageIcon("s2.jpg");
 		lbl_images2=new JLabel(images2);
 		lbl_images2.setBounds(0, 0, 542, 600);
+		lbl_images2.setLayout(null);
 		sketchb.add(lbl_images2);
 		
-		images3= new ImageIcon(getClass().getResource("s3.jpg"));
+		images3= new ImageIcon("s3.jpg");
 		lbl_images3=new JLabel(images3);
 		lbl_images3.setBounds(0, 0, 510, 600);
+		lbl_images3.setLayout(null);
 		sketchc.add(lbl_images3);
 		
-		images4= new ImageIcon(getClass().getResource("s4.jpg"));
+		images4= new ImageIcon("s4.jpg");
 		lbl_images4=new JLabel(images4);
 		lbl_images4.setBounds(0, 0, 507, 600);
+		lbl_images4.setLayout(null);
 		sketchd.add(lbl_images4);
 	
-		images5= new ImageIcon(getClass().getResource("s5.jpg"));
+		images5= new ImageIcon("s5.jpg");
 		lbl_images5=new JLabel(images5);
 		lbl_images5.setBounds(0, 0, 472, 600);
+		lbl_images5.setLayout(null);
 		sketche.add(lbl_images5);
 			
 	}

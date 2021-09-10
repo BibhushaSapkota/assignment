@@ -15,11 +15,11 @@ import javax.swing.*;
 
 public class Art implements ActionListener{
 	JFrame frame;
-	JLabel lbl_image,lbl_heading,lbl_image1,lbl_image2,lbl_image3;
+	JLabel lbl_image;
 	Font fon1,fon2;
 	JPanel sketch,main,paintings,profile,details;
 	JButton btn_sketch,btn_paintings,btn_details,btn_profile,btn_buy;
-	ImageIcon image,image1,image2,image3;
+	ImageIcon image;
 	JComboBox com;
 	String user;
 	
@@ -109,9 +109,10 @@ public class Art implements ActionListener{
 		main.add(btn_buy);
 		
 		
-		image= new ImageIcon(getClass().getResource("background.jpg"));
+		image= new ImageIcon("background.jpg");
 		lbl_image=new JLabel(image);
 		lbl_image.setBounds(0, 0, 1500, 900);
+		lbl_image.setLayout(null);
 		main.add(lbl_image);
 		
 
@@ -120,9 +121,7 @@ public class Art implements ActionListener{
 		frame.setVisible(true);
 	}
 	
-public static void main (String[]args, String user) {
-		new Art(user);
-	}
+
 
 	@Override
 	public void actionPerformed(ActionEvent e) {

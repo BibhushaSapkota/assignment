@@ -6,6 +6,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.Objects;
 
 import javax.swing.*;
 
@@ -85,10 +86,11 @@ public class Login implements ActionListener{
 		btn_reg.setBounds(500,400,150,40);
 		btn_reg.addActionListener(this);
 		p.add(btn_reg);
-		
-		image=new ImageIcon(getClass().getResource("background.jpg"));
+
+		image=new ImageIcon("background.jpg");
 		lbl_image=new JLabel(image);
 		lbl_image.setBounds(0, 0, 1600, 900);
+		lbl_image.setLayout(null);
 		pan.add(lbl_image);
 		
 		
@@ -100,6 +102,7 @@ public class Login implements ActionListener{
 		frame.setVisible(true);
 	}
 	public static void main (String[]args) {
+
 		new Login();
 	}
 	@Override
