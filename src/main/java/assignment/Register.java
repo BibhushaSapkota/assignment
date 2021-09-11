@@ -31,7 +31,7 @@ public class Register implements ActionListener{
 	lbl_heading = new JLabel(" User Registration");
 	lbl_heading.setForeground(new Color(200,17,20));
 	lbl_heading.setFont(fon1);
-	lbl_heading.setBounds(500,60,400,50);
+	lbl_heading.setBounds(600,60,400,50);
 	p.add(lbl_heading);
 	
 	
@@ -39,73 +39,73 @@ public class Register implements ActionListener{
 	lbl_fname = new JLabel("First name");
 	lbl_fname.setForeground(new Color(200,17,20));
 	lbl_fname.setFont(fon2);
-	lbl_fname.setBounds(400,200,250,30);
+	lbl_fname.setBounds(500,200,250,30);
 	p.add(lbl_fname);
 	
 	txt_fname = new JTextField();
 	txt_fname.setForeground(Color.blue);
 	txt_fname.setFont(fon2);
-	txt_fname.setBounds(650,200,250,30);
+	txt_fname.setBounds(740,200,250,30);
 	p.add(txt_fname);
 	
 	
 	lbl_lname = new JLabel("Last name");
 	lbl_lname.setForeground(new Color(200,17,20));
 	lbl_lname.setFont(fon2);
-	lbl_lname.setBounds(400,250,250,30);
+	lbl_lname.setBounds(500,250,250,30);
 	p.add(lbl_lname);
 	
 	txt_lname = new JTextField();
 	txt_lname.setForeground(Color.blue);
 	txt_lname.setFont(fon2);
-	txt_lname.setBounds(650,250,250,30);
+	txt_lname.setBounds(740,250,250,30);
 	p.add(txt_lname);
 	
 	lbl_username = new JLabel("Username");
 	lbl_username.setForeground(new Color(200,17,20));
 	lbl_username.setFont(fon2);
-	lbl_username.setBounds(400,350,250,30);
+	lbl_username.setBounds(500,350,250,30);
 	p.add(lbl_username);
 	
 	txt_username = new JTextField();
 	txt_username.setForeground(Color.blue);
 	txt_username.setFont(fon2);
-	txt_username.setBounds(650,350,250,30);
+	txt_username.setBounds(740,350,250,30);
 	p.add(txt_username);
 	
 	lbl_password = new JLabel("Password");
 	lbl_password.setForeground(new Color(200,17,20));
 	lbl_password.setFont(fon2);
-	lbl_password.setBounds(400,400,250,30);
+	lbl_password.setBounds(500,400,250,30);
 	p.add(lbl_password);
 	
 	txt_password = new JPasswordField();
 	txt_password.setForeground(Color.blue);
 	txt_password.setFont(fon2);
-	txt_password.setBounds(650,400,250,30);
+	txt_password.setBounds(740,400,250,30);
 	p.add(txt_password);
 	
 	lbl_cpassword = new JLabel("Confirm Password");
 	lbl_cpassword.setForeground(new Color(200,17,20));
 	lbl_cpassword.setFont(fon2);
-	lbl_cpassword.setBounds(400,450,250,30);
+	lbl_cpassword.setBounds(500,450,250,30);
 	p.add(lbl_cpassword);
 	
 	txt_cpassword = new JPasswordField();
 	txt_cpassword.setForeground(Color.blue);
 	txt_cpassword.setFont(fon2);
-	txt_cpassword.setBounds(650,450,250,30);
+	txt_cpassword.setBounds(740,450,250,30);
 	p.add(txt_cpassword);
 	
 	lbl_gender = new JLabel("Gender");
 	lbl_gender.setForeground(new Color(200,17,20));
 	lbl_gender.setFont(fon2);
-	lbl_gender.setBounds(400,300,250,30);
+	lbl_gender.setBounds(500,300,250,30);
 	p.add(lbl_gender);
 	
 	String Gender[]= {"Select","Male","Female","Non-Binary"} ;
 	c=new JComboBox(Gender);
-	c.setBounds(650,300,250,30);
+	c.setBounds(740,300,250,30);
 	p.add(c);
 	
 	
@@ -114,7 +114,7 @@ public class Register implements ActionListener{
 	register.setFont(fon1);
 	register.addActionListener(this);
 	register.setBackground(new Color(16,1,35));
-	register.setBounds(400,600,250,50);
+	register.setBounds(500,600,240,50);
 	p.add(register);
 	
 	login = new JButton("Login");
@@ -122,10 +122,10 @@ public class Register implements ActionListener{
 	login.setFont(fon1);
 	login.setBackground(new Color(16,1,35));
 	login.addActionListener(this);
-	login.setBounds(700,600,250,50);
+	login.setBounds(750,600,240,50);
 	p.add(login);
 	
-	image= new ImageIcon(getClass().getResource("background.jpg"));
+	image= new ImageIcon("background.png");
 	lbl_image=new JLabel(image);
 	lbl_image.setBounds(0, 0, 1600, 900);
 	p.add(lbl_image);
@@ -156,8 +156,8 @@ public class Register implements ActionListener{
 			if (u.getFname().length()==0 || u.getLname().length()==0 || u.getGender().length()==0 || u.getUsername().length()==0|| u.getPassword().length()==0||u.getCpassword().length()==0) {
 				JOptionPane.showMessageDialog(register, " All Fields are required");
 			}
-			
-			else if (u.getPassword().equals( u.getCpassword()) != true) {
+
+			else if (!u.getPassword().equals(u.getCpassword())) {
 				JOptionPane.showMessageDialog(register,"Password and Confirm Password doesn't match","Dialog",JOptionPane.ERROR_MESSAGE);}
 			
 			else {

@@ -2,8 +2,10 @@
   <library name="mysql-connector-java-8.0.25">
     <CLASSES>
       <root url="jar://$USER_HOME$/eclipse-workspace/JDBC/lib/mysql-connector-java-8.0.25.jar!/" />
+      <root url="file://$USER_HOME$/eclipse-workspace/JDBC/lib" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
+    <jarDirectory url="file://$USER_HOME$/eclipse-workspace/JDBC/lib" recursive="false" />
   </library>
 </component>

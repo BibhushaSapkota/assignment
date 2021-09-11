@@ -16,9 +16,9 @@ public class Painting implements ActionListener {
 		
 		painting1=new JButton("Painting 1");
 		painting1.setBounds(10, 10,150, 50);
-		painting1.setForeground(new Color(226,11,183));	
 		painting1.addActionListener(this);
-		painting1.setBackground(new Color(16,1,35));
+		painting1.setForeground(new Color(16,1,35));
+		painting1.setBackground(new Color(226,11,183));
 		p.add(painting1);
 		
 		painting2=new JButton("Painting 2");
@@ -59,6 +59,7 @@ public class Painting implements ActionListener {
 		paintinga=new JPanel();
 		paintinga.setLayout(null);
 		p.add(paintinga);
+		paintinga.setBounds(190,90,760,600);
 		
 		paintingb=new JPanel();
 		paintingb.setLayout(null);

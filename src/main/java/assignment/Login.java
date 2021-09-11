@@ -27,67 +27,56 @@ public class Login implements ActionListener{
 		fon2=new Font("arial",Font.BOLD,25);
 		
 		pan=new JPanel();
-		p= new JPanel();
-		p.setSize(1000,700);
-		p.setBackground(new Color(234,196,186));
-		p.setBounds(400,100, 700, 500);
-		p.setLayout(null);
-		pan.add(p);
+
 		frame.add(pan);
 		
 		
 		lbl_heading = new JLabel("Login Credentials");
 		lbl_heading.setForeground(new Color(200,17,20));
 		lbl_heading.setFont(fon1);
-		lbl_heading.setBounds(200,10,300,50);
-		p.add(lbl_heading);
+		lbl_heading.setBounds(1200,100,300,50);
+		pan.add(lbl_heading);
 		
 		lbl_username=new JLabel ("Username");
 		lbl_username.setForeground(new Color(200,17,20));
 		lbl_username.setFont(fon2);
-		lbl_username.setBounds(100, 150, 250, 40);
-		p.add(lbl_username);
+		lbl_username.setBounds(1150, 200, 250, 40);
+		pan.add(lbl_username);
 		
 		txt_username=new JTextField();
 		txt_username.setFont(fon2);
-		txt_username.setBounds(300,150, 250, 40);
-		p.add(txt_username);
+		txt_username.setBounds(1270,200, 250, 40);
+		pan.add(txt_username);
 		
 		lbl_password=new JLabel("Password");
 		lbl_password.setForeground(new Color(200,17,20));
 		lbl_password.setFont(fon2);
-		lbl_password.setBounds(100, 300, 250, 40);
-		p.add(lbl_password);
+		lbl_password.setBounds(1150, 300, 250, 40);
+		pan.add(lbl_password);
 		
 		txt_password=new JPasswordField();
 		txt_password.setFont(fon2);
-		txt_password.setBounds(300,300,250,40);
-		p.add(txt_password);
+		txt_password.setBounds(1270,300,250,40);
+		pan.add(txt_password);
 		
 		btn_login=new JButton ("Login");
 		btn_login.setFont(fon2);
 		btn_login.setForeground(new Color(200,17,20));
 		btn_login.setBackground(new Color(218,183,170));
-		btn_login.setBounds(100,400,150,40);
+		btn_login.setBounds(1150,450,150,40);
 		btn_login.addActionListener(this);
-		p.add(btn_login);
-		
-		btn_cancel=new JButton ("Cancel");
-		btn_cancel.setFont(fon2);
-		btn_cancel.setForeground(new Color(200,17,20));
-		btn_cancel.setBackground(new Color(218,183,170));
-		btn_cancel.setBounds(300,400,150,40);
-		p.add(btn_cancel);
+		pan.add(btn_login);
+
 		
 		btn_reg=new JButton("Sign up");
 		btn_reg.setFont(fon2);
 		btn_reg.setForeground(new Color(200,17,20));
 		btn_reg.setBackground(new Color(218,183,170));
-		btn_reg.setBounds(500,400,150,40);
+		btn_reg.setBounds(1350,450,150,40);
 		btn_reg.addActionListener(this);
-		p.add(btn_reg);
+		pan.add(btn_reg);
 
-		image=new ImageIcon("background.jpg");
+		image=new ImageIcon("bgggg.png");
 		lbl_image=new JLabel(image);
 		lbl_image.setBounds(0, 0, 1600, 900);
 		lbl_image.setLayout(null);

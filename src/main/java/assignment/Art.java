@@ -22,6 +22,7 @@ public class Art implements ActionListener{
 	ImageIcon image;
 	JComboBox com;
 	String user;
+
 	
 	
 	public Art(String user) {
@@ -128,6 +129,7 @@ public class Art implements ActionListener{
 		if (e.getSource()==btn_sketch) {
 			paintings.setBounds(0, 0, 0, 0);
 			profile.setBounds(0, 0, 0, 0);
+			details.setBounds(0,0,0,0);
 			btn_sketch.setForeground(new Color(16,115,44));
 			btn_sketch.setBackground(new Color(218,183,170));
 			btn_paintings.setForeground(new Color(200,17,20));
@@ -158,6 +160,7 @@ public class Art implements ActionListener{
 		else if (e.getSource()==btn_details) {
 			sketch.setBounds(0,0,0,0);
 			profile.setBounds(0, 0, 0, 0);
+			paintings.setBounds(0,0,0,0);
 			btn_details.setForeground(new Color(16,115,44));
 			btn_details.setBackground(new Color(218,183,170));
 			btn_sketch.setForeground(new Color(200,17,20));
@@ -172,6 +175,7 @@ public class Art implements ActionListener{
 		else if (e.getSource()==btn_profile) {
 			sketch.setBounds(0,0,0,0);
 			paintings.setBounds(0,0,0,0);
+			details.setBounds(0,0,0,0);
 			profile.setBounds(400,50,1000,700);
 			btn_profile.setForeground(new Color(16,115,44));
 			btn_profile.setBackground(new Color(218,183,170));
@@ -193,15 +197,16 @@ public class Art implements ActionListener{
 			
 			sketch.setBounds(0,0,0,0);
 			paintings.setBounds(0,0,0,0);
-			profile.setBounds(400,50,1000,700);
-			btn_profile.setForeground(new Color(16,115,44));
-			btn_profile.setBackground(new Color(218,183,170));
+			profile.setBounds(0,0,0,0);
+			details.setBounds(400,50,1000,700);
+			btn_details.setForeground(new Color(16,115,44));
+			btn_details.setBackground(new Color(218,183,170));
 			btn_paintings.setForeground(new Color(200,17,20));
 			btn_paintings.setBackground(new Color(218,183,170));
 			btn_sketch.setForeground(new Color(200,17,20));
 			btn_sketch.setBackground(new Color(218,183,170));
-			btn_details.setForeground(new Color(200,17,20));
-			btn_details.setBackground(new Color(218,183,170));
+			btn_profile.setForeground(new Color(200,17,20));
+			btn_profile.setBackground(new Color(218,183,170));
 			
 			if (com.getSelectedItem()=="Select") {
 				JOptionPane.showMessageDialog(btn_buy,"Please select the art you want to buy");
@@ -222,6 +227,14 @@ public class Art implements ActionListener{
 							int ans = db.insert(query);
 							if(ans>0) {
 								JOptionPane.showMessageDialog(btn_buy, "Your order has been placed.");
+								details.removeAll();
+								details.repaint();
+								details.revalidate();
+
+								details.setBounds(400,50,1000,700);
+								new Details(details,user);
+
+
 							}
 						}
 						

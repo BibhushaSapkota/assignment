@@ -17,7 +17,6 @@ public class Dbconnection {
 			// creating connection object
 			con=DriverManager.getConnection("jdbc:mysql://localhost:3306/registration","root","@!2002bisesh");
 			
-			
 			//creating the statement object
 			st=con.createStatement();
 			
