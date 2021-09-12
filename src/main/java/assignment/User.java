@@ -43,6 +43,11 @@ public class User {
 	String username;
 	String password;
 	String cpassword;
+
+	public User(){
+
+	}
+
 	public User(String fname, String lname, String gender, String username, String password, String cpassword) {
 		super();
 		this.fname = fname;

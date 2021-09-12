@@ -128,5 +128,13 @@ public class Login implements ActionListener{
 			}
 		}
 	 }
-		
+	public boolean login_test(String username_t, String password_t) {
+		String username="bibhu";
+		String password="sapkota6";
+		boolean result = false;
+		if (username_t == username && password_t == password) {
+			result = true;
+		}
+		return result;
+	}
 	}

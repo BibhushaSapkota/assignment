@@ -1,6 +1,9 @@
 package assignment;
 
 public class buy {
+	public buy(){
+
+	}
 	public buy(String username, String art) {
 		super();
 		this.username = username;
@@ -20,5 +23,4 @@ public class buy {
 	}
 	String username;
 	String art;
-
 }

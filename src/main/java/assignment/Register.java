@@ -190,5 +190,13 @@ public class Register implements ActionListener{
 			frame.dispose();
 		}
 	}
-	
+	public boolean registration_test(String pass_t, String cpass_t) {
+		String pass_test="sapkota6";
+		String cpass_test="sapkota6";
+		boolean result = false;
+		if (pass_t == pass_test && cpass_t == cpass_test) {
+			result = true;
+		}
+		return result;
+	}
 }
