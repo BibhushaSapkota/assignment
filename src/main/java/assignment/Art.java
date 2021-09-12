@@ -27,7 +27,7 @@ public class Art implements ActionListener{
 	
 	public Art(String user) {
 		this.user=user;
-		frame=new JFrame ("Login Page");
+		frame=new JFrame ("HOME Page");
 		fon1=new Font("arial",Font.BOLD,35);
 		fon2=new Font("arial",Font.BOLD,25);
 		
@@ -87,7 +87,7 @@ public class Art implements ActionListener{
 		btn_profile.addActionListener(this);
 		main.add(btn_profile);
 		
-		btn_details=new JButton("Details");
+		btn_details=new JButton("Records");
 		btn_details.setBounds(40,350,200, 50);
 		btn_details.setFont(fon2);
 		btn_details.setForeground(new Color(200,17,20));
