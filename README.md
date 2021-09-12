@@ -2,6 +2,7 @@
 Name: Bibhusha Sapkota
 CUID : 11494933
 Project title:Art store
+
  Art is a major sector in and of itself, but it appears to be absent in the digital market.People wish to have that staple piece of art at their home as a decoration, 
  but people don’t have an idea about where to get them.Similarly, artists too do not have that platform to present their work. As a result,through this system customers 
  can buy the art of their choice.
@@ -28,7 +29,7 @@ Atlast their is dropdown from where they can choose the art they want and can pr
 Lastly I have also done testing
 ![testing1](https://user-images.githubusercontent.com/78782325/132981419-5847ed03-5b95-4be4-8520-a72d38c815c4.PNG)
 
-where 8 of the tests were passes similarly 2 of them were failed by providing dummy data
+where 8 of the tests were passed similarly 2 of them were failed by providing dummy data
 ![testing](https://user-images.githubusercontent.com/78782325/132981442-2f399c12-a7b3-4f9c-ba00-aca956e806cc.PNG)
 
  Testcase
